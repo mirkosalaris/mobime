@@ -4,18 +4,20 @@ html {
 
 body {
     min-height: 100%;
+    background: #c1f6ff;
 }
 
-/*div#search-box > form {*/
-/*    transition: all 1s ease;*/
-/*}*/
+nav {
+    background-color: #00daff !important;
+}
 
-/*@media (min-width: 992px) {*/
-/*    div#search-box > form {*/
-/*    padding-top: 30%;*/
-/*    transition: all 1s ease;*/
-/*}*/
-/*}*/
+#search-result {
+    display: none;
+}
+
+div#search-box > form {
+    transition: all 1s ease;
+}
 
 div#search-box::before {
     margin-top: 50%;
@@ -28,3 +30,25 @@ div#search-box::before {
         margin-top: 276px;
     }
 }
+
+#search-result {
+    background-color: white;
+    width: calc(100% - 20px);
+    min-height: 20px;
+    padding: 20px 10px;
+    margin-top: -13px;
+    border-radius: 0 0 20px 20px;
+}
+
+#search-result > div {
+    display: none;
+}
+
+.searchString {
+    font-weight: bold;
+}
+
+.result {
+    padding: 8px 0;
+}
+
