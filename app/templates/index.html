@@ -1,14 +1,10 @@
 {% extends "base.html" %}
 {% block content %}
-<div>
-    <p>{{ message }}</p>
-
-    <p>{{ contacts }}</p>
-    <p>My Contacts:</p>
-    <ul>
-        {% for contact in contacts %}
-        <li>{{ contact }}</li>
-        {% endfor %}
-    </ul>
+<div id="search-box" class="container">
+    <form>
+        <div class="form-group">
+            <input type="text" class="form-control" id="search" placeholder="Cerca: Firenze, Cinema, Tram, Ponte Vecchio">
+        </div>
+    </form>
 </div>
 {% endblock %}

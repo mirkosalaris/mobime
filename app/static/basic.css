@@ -1,0 +1,30 @@
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+}
+
+/*div#search-box > form {*/
+/*    transition: all 1s ease;*/
+/*}*/
+
+/*@media (min-width: 992px) {*/
+/*    div#search-box > form {*/
+/*    padding-top: 30%;*/
+/*    transition: all 1s ease;*/
+/*}*/
+/*}*/
+
+div#search-box::before {
+    margin-top: 50%;
+    display: block;
+    content: "";
+}
+
+@media (min-width: 769px) {
+    div#search-box::before {
+        margin-top: 276px;
+    }
+}
