@@ -7,9 +7,9 @@ function react(event) {
 
 
     if (value.length > 0) {
-        if ("firenze".indexOf(value) === 0) {
-            showFirenze();
-        } else if ("cinema".indexOf(value) === 0) {
+        if ("hotel firenze".indexOf(value) === 0) {
+            showHotel();
+        } else if ("cinema firenze".indexOf(value) === 0) {
             showCinema();
         } else {
             hideEverything();
@@ -24,20 +24,20 @@ function fillAvanzata(value) {
     $(".searchString").html(value)
 }
 
-function showFirenze() {
+function showHotel() {
     $("#search-result").show();
-    $("#firenze").show();
+    $("#hotel").show();
      $("#cinema").hide();
 }
 
 function showCinema() {
     $("#search-result").show();
     $("#cinema").show();
-     $("#firenze").hide();
+     $("#hotel").hide();
 }
 
 function hideEverything() {
-    $("#firenze").hide();
+    $("#hotel").hide();
     $("#cinema").hide();
     $("#search-result").hide();
 }

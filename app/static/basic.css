@@ -1,18 +1,41 @@
+@font-face {
+    font-family: "Raleway";
+    src: url("./raleway/Raleway-Medium.ttf");
+}
+
+* {
+    font-family: "Raleway", "sans-serif";
+}
+
 html {
     height: 100%;
 }
 
 body {
     min-height: 100%;
-    background: #c1f6ff;
+    z-index: 0;
 }
 
-nav {
-    background-color: #00daff !important;
+body::after {
+    background-image: url(./images/home-background.png)!important;
+    background-position-x: center;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+    opacity: 0.5;
+}
+
+nav.navbar {
+    background-color: #fd6756 !important;
 }
 
 .navbar-brand > img {
-    max-height: 20px;
+    max-height: 30px;
     vertical-align: text-top;
 }
 
@@ -20,8 +43,17 @@ nav {
     display: none;
 }
 
+#search-box {
+    max-width: 720px;
+}
+
 div#search-box > form {
     transition: all 1s ease;
+}
+
+div#search-box input {
+    height: 80px;
+    font-size: 24px;
 }
 
 div#search-box::before {
@@ -67,6 +99,10 @@ div#search-box::before {
     background: #FAFAFA;
 }
 
+.result > h3 {
+    display: inline;
+}
+
 .profile-image {
     width: 20px;
     height: 20px;
@@ -83,9 +119,56 @@ div#search-box::before {
     margin-right: 15%;
     margin-left: 15%;
     text-align: justify;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
 }
+
 p.desc {
     margin-top: 5%;
     font-size: larger;
 }
 
+.icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.icon::after {
+    display: block;
+    content: "";
+    width: 15px;
+    height: 15px;
+    margin-top: 7px;
+    margin-left: -5px;
+    background-image: url("./images/tick.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.cross::after {
+     background-image: url("./images/cross.png");
+}
+
+.wheelchair {
+    background-image: url("./images/wheelchair.png");
+}
+
+.hearing-room {
+    background-image: url("./images/hearing-room.png");
+}
+
+.disabled-parking {
+    background-image: url("./images/disabled-parking.png");
+}
+
+.fridge {
+    background-image: url("./images/fridge.png");
+}
+
+.shuttle {
+    background-image: url("./images/shuttle.png");
+}
