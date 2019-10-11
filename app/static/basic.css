@@ -77,3 +77,15 @@ div#search-box::before {
     margin-right: 5px;
     padding: 4px;
 }
+
+.about {
+    margin-top: 7%;
+    margin-right: 15%;
+    margin-left: 15%;
+    text-align: justify;
+}
+p.desc {
+    margin-top: 5%;
+    font-size: larger;
+}
+
