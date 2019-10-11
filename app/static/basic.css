@@ -186,3 +186,8 @@ p.sub{
 .shuttle {
     background-image: url("./images/shuttle.png");
 }
+
+.profile > img {
+    display: block;
+    margin: 80px auto auto;
+}
