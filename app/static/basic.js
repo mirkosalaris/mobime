@@ -44,4 +44,3 @@ function hideEverything() {
 
 
 $("#search-box > form").keyup(react);
-console.log("ciao");
